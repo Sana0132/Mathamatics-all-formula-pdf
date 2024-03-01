@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>freands Details</title>
+</head>
+<body>
+
+    
+
+
+  <div id="search-container">
+    <label for="search">Search:</label>
+    <input type="text" id="search" oninput="filterAnimals()" placeholder="search your formula">
+  </div>
+  
+
+  <div id="animal-details">
+    <div class="animal" data-category="Vectors">
+      <details>
+          <summary>
+              <h2>Vectors and Three Dimensional Geometry Formulas for Class 12</h2>
+          </summary>
+          <h3>Click to
+              <a
+href="
+https://drive.google.com/file/d/14522OnsNCABxNti3iHVr04bLsgq3NxMY/view?usp=drivesdk
+">DOWNLOAD</a>
+Vectors pdf formula
+
+          </h3>
+      </details>
+     </div>
+     
+     
+    <div class="animal" data-category="Algebra">
+      <details>
+          <summary>
+              <h2>
+                  
+                  Algebra Formulas For Class 12
+              </h2>
+          </summary>
+          <h3>
+              click to 
+              <a href="  https://drive.google.com/file/d/1408zAnemtqgmEGwWFzKRvDlYljtpv1ON/view?usp=drivesdk ">DOWNLOAD</a>
+              Algebra pdf formula
+          </h3>
+      </details>
+   </div>
+   
+    
+   
+
+
+
+
+  <script>
+      
+      function filterAnimals() {
+  const searchInput = document.getElementById('search').value.toLowerCase();
+  const animals = document.querySelectorAll('.animal');
+
+  animals.forEach(animal => {
+    const category = animal.getAttribute('data-category').toLowerCase();
+    const shouldShow = category.includes(searchInput);
+    animal.style.display = shouldShow ? 'block' : 'none';
+  });
+}
+  </script>
+</body>
+
+<style>
+    body { 
+        font-family:serif;
+        
+    background-color:#FF8E00;
+    color:#002347;
+}
+
+#search-container{
+    
+    text-align: center ;
+    
+}
+
+
+#search{
+    border-radius:25px;
+    
+    color:#174D5A;
+    border-color:#fff;
+    height:33px;
+    width:100%;
+}
+</style>
+
+
+
+</html>
